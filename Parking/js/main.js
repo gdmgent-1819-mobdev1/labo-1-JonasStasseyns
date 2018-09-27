@@ -21,7 +21,7 @@ setInterval(function(){
             
             document.querySelector('.wrapper').innerHTML += '<div class="parking-container" id="p' + i + '"><h1>' + data[i].name + '</h1><h2>' + data[i].parkingStatus.availableCapacity + '/' + data[i].parkingStatus.totalCapacity + '</h2></div>';
             
-            if((data[i].parkingStatus.availableCapacity/data[i].parkingStatus.totalCapacity)>0.5){
+            if((data[i].parkingStatus.availableCapacity/data[i].parkingStatus.totalCapacity)>=0.5){
                 document.querySelector('#p'+i).style.backgroundColor = 'green';
             }else if((data[i].parkingStatus.availableCapacity/data[i].parkingStatus.totalCapacity)>0.2 && (data[i].parkingStatus.availableCapacity/data[i].parkingStatus.totalCapacity)<0.5){
                 document.querySelector('#p'+i).style.backgroundColor = 'orange';

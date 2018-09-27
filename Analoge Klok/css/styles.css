@@ -1,0 +1,35 @@
+.watchface {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+}
+
+#hour-hand {
+    width: 2px;
+    height: 6vw;
+    background-color: black;
+    position: absolute;
+    left: 10vw;
+    margin-top: 4vw;
+    transform-origin: 50% 100%;
+}
+
+#minute-hand {
+    width:2px;
+    height: 10vw;
+    background-color: black;
+    position: absolute;
+    left: 10vw;
+    transform-origin: 50% 100%;
+}
+
+#second-hand {
+    width: 2px;
+    height: 10vw;
+    background-color: red;
+    position: absolute;
+    left: 10vw;
+    transform-origin: 50% 100%;
+}
